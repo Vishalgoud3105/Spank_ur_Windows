@@ -298,9 +298,16 @@ Copy-paste any command below into PowerShell from your project folder to test ea
 
 ```powershell
 # ── FULL POWER (all 4 methods active) ──────────────────────────────
-python spank.py                          # pain mode,  all 4 methods
-python spank.py --sexy                   # sexy mode,  all 4 methods  ← recommended
-python spank.py --halo                   # halo mode,  all 4 methods
+python spank.py                                                  # pain mode,  all 4 methods
+python spank.py --sexy                                           # sexy mode,  all 4 methods  ← recommended
+python spank.py --halo                                           # halo mode,  all 4 methods
+python spank.py --custom C:\sounds                               # Custom folder
+
+# ── Disable individual detectors ────────────────────────────────────
+python spank.py --sexy --no-sensor                               # Skip accelerometer
+python spank.py --sexy --no-mic                                  # Skip microphone
+python spank.py --sexy --no-touch                                # Skip touchscreen slap
+python spank.py --sexy --no-gesture                              # Skip gesture touch
 
 # ── WITH ACCELEROMETER ──────────────────────────────────────────────
 python spank.py --sexy --no-mic --no-touch --no-gesture          # accelerometer only
@@ -336,30 +343,6 @@ python spank.py --sexy --finger-cooldown 500                     # slower gestur
 > 4. Run `python spank.py --sexy --no-sensor --no-mic --no-touch` → place 2-3 fingers on trackpad → if sound plays, your gesture detection works
 >
 > Once you know which methods work, use the matching combination command above as your daily driver.
-
-## Usage
-
-```powershell
-python spank.py                       # Pain mode, all 4 detectors
-python spank.py --sexy                # Sexy mode, all 4 detectors
-python spank.py --halo                # Halo mode, all 4 detectors
-python spank.py --custom C:\sounds    # Custom folder
-
-# Disable individual detectors
-python spank.py --sexy --no-sensor    # Skip accelerometer
-python spank.py --sexy --no-mic       # Skip microphone
-python spank.py --sexy --no-touch     # Skip touchscreen slap
-python spank.py --sexy --no-gesture   # Skip gesture touch
-
-# Tune sensitivity
-python spank.py --threshold 0.10      # More sensitive accelerometer (default: 0.18)
-python spank.py --threshold 0.30      # Less sensitive accelerometer
-python spank.py --mic-db -25          # More sensitive mic (default: -20)
-python spank.py --mic-db -15          # Less sensitive mic
-python spank.py --touch-force 5       # More sensitive touch (default: 10)
-python spank.py --touch-force 30      # Less sensitive touch
-python spank.py --finger-cooldown 200 # Faster gesture response (default: 300ms)
-```
 
 ---
 
