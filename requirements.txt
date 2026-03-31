@@ -1,0 +1,35 @@
+# spank-windows — requirements.txt
+#
+# Install all required dependencies:
+#   pip install -r requirements.txt
+#
+# If you get a "Unable to create process" venv error, use:
+#   python -m pip install -r requirements.txt
+#
+# After that, install the Windows-only accelerometer package separately:
+#   pip install winrt-runtime
+#
+# ── Version notes ─────────────────────────────────────────────────────────────
+# The >= pins below mean "this version or newer".
+# Latest stable versions at time of writing (March 2026):
+#   numpy        2.4.2
+#   sounddevice  0.5.5
+#   scipy        1.17.1
+#   pygame       2.6.1
+#   winrt-runtime 3.2.1  (optional, not listed here — Windows only)
+#
+# You do NOT need exact versions. Any version meeting the >= floor works.
+# ──────────────────────────────────────────────────────────────────────────────
+
+# ── Required ──────────────────────────────────────────────────────────────────
+numpy>=1.24.0        # Array math for microphone signal processing (RMS, filtering)
+sounddevice>=0.4.6   # Real-time microphone audio stream input (Method 2)
+scipy>=1.10.0        # Butterworth 400Hz low-pass filter for thud detection (Method 2)
+pygame>=2.5.0        # Audio playback — dual channel (main slap + gesture simultaneously)
+
+# ── NOT listed here (install separately on Windows) ───────────────────────────
+# winrt-runtime>=2.0.0
+#   Enables native Python access to Windows.Devices.Sensors.Accelerometer at 100Hz.
+#   Without it, the script uses a PowerShell bridge (works but ~5Hz poll rate).
+#   Windows-only package — excluded from requirements.txt to keep it cross-platform.
+#   Install with:  pip install winrt-runtime
