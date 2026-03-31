@@ -1,4 +1,4 @@
-# spank — Windows Edition
+# 🍑👋🏻🗣️🫦Spank_ur_Windows — Windows Edition🪟
 
 > *A faithful Windows port of [taigrr/spank](https://github.com/taigrr/spank)*
 
