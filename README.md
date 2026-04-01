@@ -430,12 +430,11 @@ spank-windows/
 **False triggers?** — Raise `--threshold` or `--mic-db`. Disable the noisiest method with `--no-mic` or `--no-sensor`.
 
 ---
-
 ## Credits
 
 - Original project: [taigrr/spank](https://github.com/taigrr/spank) by [@taigrr](https://github.com/taigrr)
 - Sensor algorithm ported from [olvvier/apple-silicon-accelerometer](https://github.com/olvvier/apple-silicon-accelerometer)
-- Windows port by [YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+- Windows port by [Vishalgoud3105](https://github.com/Vishalgoud3105)
 
 ---
 
@@ -444,3 +443,25 @@ spank-windows/
 MIT — same as the original project.
 
 `audio/pain/`, `audio/sexy/`, `audio/halo/` belong to [taigrr/spank](https://github.com/taigrr/spank) — get them from their releases page. `audio/touch/` files are user-supplied and not included in this repo.
+
+---
+
+<div align="center">
+
+**Built with 💻 and ☕ by Vishal Goud**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](http://www.linkedin.com/in/vishalgoud3105)
+[![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=github)](https://github.com/Vishalgoud3105)
+[![Portfolio](https://img.shields.io/badge/Portfolio-orange?style=flat)](https://vishalgoud3105.github.io/Portfolio/)
+
+---
+
+### 📬 Contact
+
+This repository is **private**. For collaboration inquiries, demo requests, or questions:
+
+📧 **Email**: [vishalgoud3105@gmail.com](mailto:vishalgoud3105@gmail.com)  
+💼 **LinkedIn**: [vishalgoud](http://www.linkedin.com/in/vishalgoud3105)  
+🌐 **Portfolio**: [vishalgoud3105.github.io](https://vishalgoud3105.github.io/Portfolio/)
+
+⭐ **Interested in this project? Reach out!** ⭐
